@@ -1,9 +1,46 @@
+body {
+    margin: 0;
+}
+
 .hide {
     display: none;
 }
 
-.car {
+.car, .enemy {
+    position: absolute;
+    left: 125px;
+    bottom: 10px;
     width: 50px;
     height: 100px;
     background: transparent url('./images/player.png') no-repeat center / cover;
+}
+
+.enemy-1 {
+    background-image: url('./images/enemy.png');
+}
+
+.enemy-2 {
+    background-image: url('./images/enemy2.png');
+}
+
+.line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 50px;
+    background-color: #fff;
+}
+
+.game {
+    height: 100vh;;
+}
+
+.gameArea {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    margin: auto;
+    background: #222;
+    overflow: hidden;
 }
